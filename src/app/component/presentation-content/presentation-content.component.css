@@ -1,0 +1,39 @@
+h2 {
+    font-size: clamp(16px, 8vw, 90px);
+}
+
+p {
+    font-size: clamp(12px, 2vw, 25px);
+}
+
+.pres-container {
+    text-align: center;
+    height: 100vh;
+   
+}
+
+/* BUTTONS */
+.orange-btn {
+    background-color: #FF8132;
+    border: none;
+    color: white;
+}
+
+.white-btn {
+    background-color: white;
+    border-color: #FF8132;
+    color: #FF8132;
+}
+
+button {
+    padding: 12px;
+    border-radius: 25px;
+    margin: 25px;
+    cursor: pointer;
+    font-size:clamp(12px, 5vw, 22px);
+    margin-top: 55px;
+}
+button:hover {
+    opacity: 80%;
+}
+

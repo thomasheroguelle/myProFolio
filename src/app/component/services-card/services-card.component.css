@@ -1,0 +1,35 @@
+.bg-black {
+    background-color: #0A0A0A;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    height: 100vh;
+}
+
+
+
+/* CARD  */
+.cards-container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    border-radius: 40px;
+    background-color: white;
+    margin: 15px;
+    padding: 30px;
+}
+.card:hover {
+   opacity: 95%;
+   color: orangered;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+}

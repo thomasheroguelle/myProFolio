@@ -1,0 +1,13 @@
+<div id="featured-projects">
+
+
+    <h3 style="color: black">Featured Projects</h3>
+
+    <div class="displayFlex" *ngFor="let work of works">
+
+        <h1> {{work.title}} </h1>
+        <img src="{{work.image}}" alt="">
+        <p>{{work.description}}</p>
+
+    </div>
+</div>
