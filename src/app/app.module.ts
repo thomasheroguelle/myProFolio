@@ -11,6 +11,7 @@ import { PortfoliopageComponent } from './page/portfoliopage/portfoliopage.compo
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { BurgerMenuComponent } from './component/burger-menu/burger-menu.component';
+import { ErrorpageComponent } from './component/errorpage/errorpage.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BurgerMenuComponent } from './component/burger-menu/burger-menu.compone
     FeaturedProjectsComponent,
     ContactmeComponent,
     PortfoliopageComponent,
-    BurgerMenuComponent
+    BurgerMenuComponent,
+    ErrorpageComponent
   ],
   imports: [
     BrowserModule,
