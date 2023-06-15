@@ -47,18 +47,8 @@ a:hover {
     color: #FF8132;
 }
 
-
-
-/* RESPONSIVE 
- */
-@media screen and (max-width: 891px) {
+@media screen and (max-width: 850px) {
     .header-container {
         display: none;
-        width: 50%;
-        background-color: white;
-    }
-
-    a, h1  {
-        color: black;
     }
 }

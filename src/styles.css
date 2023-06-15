@@ -5,6 +5,8 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
     line-height: 1.5em;
+    text-decoration: none;
+    list-style-type: none;
 
 
 }

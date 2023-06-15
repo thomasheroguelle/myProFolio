@@ -9,6 +9,8 @@ import { FeaturedProjectsComponent } from './component/featured-projects/feature
 import { ContactmeComponent } from './component/contactme/contactme.component';
 import { PortfoliopageComponent } from './page/portfoliopage/portfoliopage.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { BurgerMenuComponent } from './component/burger-menu/burger-menu.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { AppRoutingModule } from './app-routing.module';
     ServicesCardComponent,
     FeaturedProjectsComponent,
     ContactmeComponent,
-    PortfoliopageComponent
+    PortfoliopageComponent,
+    BurgerMenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
