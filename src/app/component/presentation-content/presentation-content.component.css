@@ -1,14 +1,14 @@
 h2 {
-    font-size: clamp(16px, 8vw, 90px);
+    font-size: clamp(16px, 5vw, 90px);
 }
 
 p {
-    font-size: clamp(12px, 2vw, 25px);
+    font-size: clamp(12px, 3vw, 25px);
 }
 
 .pres-container {
     text-align: center;
-    height: 100vh;
+    height: auto;
    
 }
 
@@ -37,3 +37,14 @@ button:hover {
     opacity: 80%;
 }
 
+/* RESPONSIVE  */
+@media screen and (max-width: 800px) {
+    button {
+      margin-top: 0;
+    }
+    .pres-container {
+        height: auto;
+        width: auto;
+    }
+  }
+  

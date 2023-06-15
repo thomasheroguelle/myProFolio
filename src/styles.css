@@ -16,13 +16,7 @@ h3 {
 }
 
 body {
-  height: 100vh;
-  max-height: 100vh;
+  height: auto;
+  max-height: auto;
 }
 
-app-root {
-  max-height: 100vh;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}

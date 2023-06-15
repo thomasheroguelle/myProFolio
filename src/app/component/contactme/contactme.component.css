@@ -1,5 +1,4 @@
 .contact-container {
-    height: 90vh;
     background-color: #0A0A0A;
     display: flex;
     justify-content: center;
@@ -8,7 +7,6 @@
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 45px;
     flex-direction: row-reverse;
-    gap: 100px;
 }
 
 * {
@@ -27,7 +25,6 @@ img {
 }
 
 .right-container {
-    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,4 +54,22 @@ h3 {
 
 .bottom-container a:hover {
     color: #FF8132;
+}
+
+@media screen and (max-width: 900px) {
+    .contact-container {
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+ 
+
 }
