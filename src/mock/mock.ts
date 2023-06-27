@@ -1,29 +1,61 @@
 export interface IProjets {
-    id : number,
-    title : string,
-    description: string,
-    image : string
+  id: number,
+  title: string,
+  description: string,
+  imagesArray: string[],
+  card: boolean,
+  hasText: boolean,
+  text?: string,
+  imagesForEshopBase? : string[]
 }
 
 
 export const PROJETS: IProjets[] = [
-  
+
   {
     id: 1,
-    title : "TODO LISTE",
-    description : "fdqbvfdvqd",
-    image : "assets/avatar.jpg",
+    title: "TODO LISTE",
+    description: "loremDZFOUBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    imagesArray: [
+      "assets/todoliste/HOME.png",
+      "assets/todoliste/CREATE_TASK.png",
+      "assets/todoliste/CREATED_TASK.png",
+      "assets/todoliste/HISTORIQUE.png"
+    ],
+    card: false,
+    hasText: false
   },
+
   {
     id: 2,
-    title : "TRAVEL NOTE BOOK",
-    description :"<fsgvqsdvf",
-    image : "assets/avatar.jpg",
+    title: "Travel Note Book",
+    description: "loremDZFOUBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    imagesArray: [
+      "assets/travelnotebook/HOME.png",
+      "assets/travelnotebook/ALBANIE.png",
+
+    ],
+    card: false,
+    hasText: false
   },
   {
     id: 3,
-    title : "PIZZERRIA DE LA MAMMA" ,
-    description :"<fsgvvf<",
-    image : "assets/avatar.jpg",
+    title: "E-SHOP B.A.S.E.",
+    description: "loremDZFOUBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    imagesArray: [
+      "assets/base/HOMEPAGE.png",
+    ],
+    card: true,
+    text: "Click to see more",
+    hasText: true,
+    imagesForEshopBase : [
+      "assets/base/HOMEPAGE.png",
+      "assets/base/CATEGORIES.png",
+      "assets/base/ARTICLES.png",
+      "assets/base/ARTICLE.png",
+      "assets/base/COMMANDE.png",
+      "assets/base/FORMULAIRE.png",
+    ]
+
   }
-]
+];

@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { BurgerMenuComponent } from './component/burger-menu/burger-menu.component';
 import { ErrorpageComponent } from './component/errorpage/errorpage.component';
+import { EshopComponent } from './component/eshop/eshop.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ErrorpageComponent } from './component/errorpage/errorpage.component';
     ContactmeComponent,
     PortfoliopageComponent,
     BurgerMenuComponent,
-    ErrorpageComponent
+    ErrorpageComponent,
+    EshopComponent
   ],
   imports: [
     BrowserModule,
