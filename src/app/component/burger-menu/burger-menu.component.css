@@ -3,8 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #00BAF0;
-    background: linear-gradient(to left, #f46b45, #eea849);
+    background: #393b45;
     color: #FFF;
     height: 50px;
     padding: 1em;
@@ -78,7 +77,8 @@
     transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 710px) {
+
     .menu-button-container {
         display: flex;
 
@@ -93,7 +93,7 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        
+
 
     }
 
@@ -127,7 +127,7 @@
     }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 710px) {
     .container {
         display: none;
     }

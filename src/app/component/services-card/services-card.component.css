@@ -5,7 +5,9 @@
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 45px;
 }
-
+/* #221D23
+#253031
+ */
 
 
 /* CARD  */
@@ -44,7 +46,8 @@ img {
       margin-top: 0;
     }
     .bg-black {
-        width: auto;
+        /* width: auto; */
+        background-color: #393b45;
     }
   }
   

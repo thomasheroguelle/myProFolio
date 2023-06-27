@@ -14,7 +14,7 @@
 h3 {
   color: white;
   text-align: center;
-  font-size: clamp(14px, 3vw, 50px);
+  font-size: clamp(14px, 5vw, 50px);
 }
 
 body {
