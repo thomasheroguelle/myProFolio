@@ -1,4 +1,4 @@
-export interface IProjets {
+export interface IProjects {
   id: number,
   title: string,
   description: string,
@@ -21,7 +21,7 @@ export interface IImgSvg {
 }
 
 
-export const PROJETS: IProjets[] = [
+export const PROJECTS: IProjects[] = [
 
   {
     id: 1,

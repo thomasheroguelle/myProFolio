@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IProjets, PROJETS } from 'src/mock/mock';
+import { IProjects, PROJECTS } from 'src/mock/mock';
 
 @Component({
   selector: 'app-eshop',
@@ -8,8 +8,8 @@ import { IProjets, PROJETS } from 'src/mock/mock';
 })
 export class EshopComponent {
 
-  imageCard : IProjets[] = PROJETS
+  imageCard : IProjects[] = PROJECTS
 
-  imageSelected = this.imageCard.filter((imageCard : IProjets) => imageCard.card === true);
+  imageSelected = this.imageCard.filter((imageCard : IProjects) => imageCard.card === true);
 
 }

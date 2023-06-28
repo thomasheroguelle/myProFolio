@@ -1,0 +1,14 @@
+<form [formGroup]="myForm">
+    <select name="filterProject" formControlName="filterProject" (change)="filterProjects()">
+        <option value="">All Projects</option>
+        <option *ngFor="let p of projects" [value]="p.title">
+            {{p.title}}
+        </option>
+    </select>
+</form>
+
+<div *ngIf="selectedProject">
+    <div *ngFor="let image of selectedProject.imagesArray">
+        <img [src]="image" alt="">
+    </div>
+</div>

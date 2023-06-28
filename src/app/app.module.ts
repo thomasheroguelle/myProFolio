@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
@@ -9,10 +10,10 @@ import { FeaturedProjectsComponent } from './component/featured-projects/feature
 import { ContactmeComponent } from './component/contactme/contactme.component';
 import { PortfoliopageComponent } from './page/portfoliopage/portfoliopage.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
 import { BurgerMenuComponent } from './component/burger-menu/burger-menu.component';
 import { ErrorpageComponent } from './component/errorpage/errorpage.component';
 import { EshopComponent } from './component/eshop/eshop.component';
+import { FilteredProjectsComponent } from './component/filtered-projects/filtered-projects.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +26,14 @@ import { EshopComponent } from './component/eshop/eshop.component';
     PortfoliopageComponent,
     BurgerMenuComponent,
     ErrorpageComponent,
-    EshopComponent
+    EshopComponent,
+    FilteredProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

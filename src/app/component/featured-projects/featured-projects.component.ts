@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IProjets, PROJETS } from 'src/mock/mock';
+import { IProjects, PROJECTS } from 'src/mock/mock';
 
 
 @Component({
@@ -9,6 +9,6 @@ import { IProjets, PROJETS } from 'src/mock/mock';
 })
 export class FeaturedProjectsComponent {
 
-  works : IProjets[] = PROJETS;
+  works : IProjects[] = PROJECTS;
 
 }
