@@ -1,53 +1,46 @@
 .bg-black {
     background-color: #0A0A0A;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-    border-bottom-left-radius: 45px;
-    border-bottom-right-radius: 45px;
+    border-radius: 45px;
 }
-/* #221D23
-#253031
- */
 
-
-/* CARD  */
 .cards-container {
-    margin-top: 35px;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     flex-wrap: wrap;
     padding-bottom: 25px;
 }
 
+h4 {
+    padding: 20px;
+    text-align: center;
+    font-size: clamp(14px, 5vw, 20px);
+}
+
 .card {
+    width: 20em;
     border-radius: 40px;
     background-color: white;
     margin: 67px;
     padding: 30px;
 }
+
 .card:hover {
-   opacity: 95%;
-   color: orangered;
+    opacity: 0.95;
+    color: orangered;
 }
 
 img {
-    width: 70%;
-    max-width: 150px;
-    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
 }
 
-
-
-/* RESPONSIVE  */
 @media screen and (max-width: 800px) {
     .cards-container {
-      margin-top: 0;
+        margin-top: 0;
     }
+
     .bg-black {
-        /* width: auto; */
         background-color: #393b45;
     }
-  }
-  
+}
