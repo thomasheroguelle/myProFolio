@@ -1,17 +1,17 @@
 <div id="featured-projects">
     <h3 class="featured-title">Featured Projects</h3>
-    <div class="displayFlex" *ngFor="let work of works">
-        <div class="work-container">
+    <div  class="displayFlex" *ngFor="let work of works">
+        <div style="margin-bottom: 25px;"  class="work-container">
             <h4> {{work.title}}</h4>
-            <a style="text-align: center;" routerLink="eshop-base" *ngIf="work.hasText">{{work.text}}</a>
             <div class="image-container">
                 <img *ngFor="let images of work.imagesArray" [src]="images"
                     [class.width-250]="work.title === 'TODO LISTE'"
                     [class.width-auto]="work.title === 'Travel Note Book'" alt=""
-                    [class.width-450]="work.title === 'E-SHOP B.A.S.E.'" alt="">
-
+                    [class.max-width]="work.title === 'E-SHOP B.A.S.E.'" alt="">
             </div>
-            <p style="text-align: center;">{{work.description}}</p>
+            <p style="text-align: center; margin-top: 25px;width: 100%; max-width: 1050px;">{{work.description}}</p>
+            <button class="orange-btn" routerLink="eshop-base" *ngIf="work.hasText">{{work.text}}</button>
+
         </div>
     </div>
 </div>
