@@ -6,14 +6,18 @@ export interface IProjets {
   card: boolean,
   hasText: boolean,
   text?: string,
-  imagesForEshopBase? : string[]
+  imagesForEshopBase?: string[]
 }
 
 export interface IServiceCards {
-  id : number,
+  id: number,
+  title: string,
+  description: string,
+  image: string,
+}
+export interface IImgSvg {
   title : string,
-  description : string, 
-  image : string
+  svgImg: string[]
 }
 
 
@@ -55,7 +59,7 @@ export const PROJETS: IProjets[] = [
     card: true,
     text: "Click to see more",
     hasText: true,
-    imagesForEshopBase : [
+    imagesForEshopBase: [
       "assets/base/HOMEPAGE.png",
       "assets/base/CATEGORIES.png",
       "assets/base/ARTICLES.png",
@@ -66,31 +70,51 @@ export const PROJETS: IProjets[] = [
 
   }
 ];
-export const SERVICECARDS : IServiceCards[] = [
+export const SERVICECARDS: IServiceCards[] = [
   {
-    id : 1,
-    title : "Back-End ",
-    description : "I specialize in developing robust back-end applications using Java and Spring. I create APIs, manage databases, and implement scalable architecture to deliver high-performance, secure, and scalable solutions.",
-    image : "assets/servicecards/backEnd.png"
-  },
-  {
-    id : 2,
-    title : "Front-End",
-    description : "I'm passionate about designing modern, responsive websites. With expertise in HTML, CSS, and JavaScript, I create attractive and user-friendly interfaces. Using Angular and TypeScript, I develop advanced and responsive web applications for optimal user experience across devices and browsers.",
-    image : "assets/servicecards/htmlcss.png"
-  },
-  {
-    id : 3,
-    title : "Web Design",
-    description : "I excel in creating visually appealing and intuitive experiences. My focus is on designing unique graphic charters, ensuring color harmony, typography, and ergonomic design. I also create wireframes and mock-ups to plan and visualize website structures prior to development.",
-    image : "assets/servicecards/webDesign.png"
-  },
-  {
-    id : 4,
-    title : "Wordpress",
-    description : "With extensive knowledge of WordPress, I leverage plugins to extend functionality according to project requirements. I optimize websites for search engines, ensuring maximum visibility. Whether it's a blog, showcase site, or e-commerce platform, I provide flexible and high-performance solutions using WordPress.",
-    image : "assets/servicecards/wordpress.png"
-    
-  },
+    id: 1,
+    title: "Back-End",
+    description: "I specialize in developing robust back-end applications using Java and Spring. I create APIs, manage databases, and implement scalable architecture to deliver high-performance, secure, and scalable solutions.",
+    image: "assets/servicecards/backEnd.png",
 
+  },
+  {
+    id: 2,
+    title: "Front-End",
+    description: "I'm passionate about designing modern, responsive websites. With expertise in HTML, CSS, and JavaScript, I create attractive and user-friendly interfaces. Using Angular and TypeScript, I develop advanced and responsive web applications for optimal user experience across devices and browsers.",
+    image: "assets/servicecards/htmlcss.png",
+
+  },
+  {
+    id: 3,
+    title: "Web Design",
+    description: "I excel in creating visually appealing and intuitive experiences. My focus is on designing unique graphic charters, ensuring color harmony, typography, and ergonomic design. I also create wireframes and mock-ups to plan and visualize website structures prior to development.",
+    image: "assets/servicecards/webDesign.png",
+
+  },
+  {
+    id: 4,
+    title: "Wordpress",
+    description: "With extensive knowledge of WordPress, I leverage plugins to extend functionality according to project requirements. I optimize websites for search engines, ensuring maximum visibility. Whether it's a blog, showcase site, or e-commerce platform, I provide flexible and high-performance solutions using WordPress.",
+    image: "assets/servicecards/wordpress.png"
+  },
 ]
+export const IMGSVG: IImgSvg[] = [
+  {
+    title : "BDD",
+    svgImg: [
+      "assets/svg/spring.svg",
+      "assets/svg/mysql-horizontal.svg",
+      "assets/svg/php-icon.svg"
+    ]
+  },
+  {
+    title : "Front",
+    svgImg: [
+      "assets/svg/angular.svg",
+      "assets/svg/react.svg",
+      "assets/svg/figma-icon.svg"
+    ]
+  }
+
+];

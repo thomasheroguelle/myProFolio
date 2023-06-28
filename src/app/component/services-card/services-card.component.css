@@ -1,6 +1,19 @@
+.imgSvg {
+    width: 50%;
+    max-width: 150px;
+    margin: 15px;
+
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .bg-black {
-    background-color: #0A0A0A;
-    border-radius: 45px;
+    background-image: linear-gradient(to right top, #0a0a0a, #080808, #070606, #050504, #030302, #0f0e0e, #171616, #1d1d1d, #2e2e2e, #404040, #525252, #666666);
 }
 
 .cards-container {
@@ -9,6 +22,13 @@
     text-align: center;
     flex-wrap: wrap;
     padding-bottom: 25px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: clamp(14px, 5vw, 50px);
+
 }
 
 h4 {
@@ -34,6 +54,8 @@ img {
     width: 100%;
     object-fit: cover;
 }
+
+
 
 @media screen and (max-width: 800px) {
     .cards-container {

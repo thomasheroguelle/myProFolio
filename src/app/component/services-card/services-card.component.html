@@ -2,7 +2,7 @@
     <div class="bg-black">
         <h3 style="padding-top: 50px;">What can I do for you</h3>
         <div class="cards-container">
-            <div class="card"  *ngFor="let card of serviceCards">
+            <div class="card" *ngFor="let card of serviceCards">
                 <img [src]="card.image" class="card-img-top">
 
                 <div class="card-body">
@@ -11,7 +11,20 @@
                     <div>
                     </div>
                 </div>
+
+
+
+
             </div>
+
         </div>
+        <h3>Stacks used : </h3>
+        <div class="displayFlex" *ngFor="let card of imgSvg">
+            <ng-container *ngFor="let svg of card.svgImg">
+            
+                    <img class="imgSvg" [src]="svg" alt="">
+            </ng-container>
+        </div>
+
+
     </div>
-</div>
