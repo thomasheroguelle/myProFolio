@@ -1,14 +1,19 @@
-<form [formGroup]="myForm">
-    <select name="filterProject" formControlName="filterProject" (change)="filterProjects()">
-        <option value="">All Projects</option>
-        <option *ngFor="let p of projects" [value]="p.title">
-            {{p.title}}
-        </option>
-    </select>
-</form>
+<div class="container">
 
-<div *ngIf="selectedProject">
-    <div *ngFor="let image of selectedProject.imagesArray">
-        <img [src]="image" alt="">
+    <form class="myForm" [formGroup]="myForm">
+        <select name="filterProject" formControlName="filterProject" (change)="filterProjects()">
+            <option value="">All Projects</option>
+            <option *ngFor="let p of projects" [value]="p.title">
+                {{p.title}}
+            </option>
+        </select>
+    </form>
+
+    <div class="displayFlex" *ngIf="selectedProject">
+            <img *ngFor="let image of selectedProject.imagesArray" [src]="image"
+                [class.todoliste]="selectedProject.title === 'TODO LISTE'"
+                [class.tnb]="selectedProject.title === 'Travel Note Book'" alt=""
+                [class.eshop]="selectedProject.title === 'E-SHOP B.A.S.E.'" alt="">
+        <p class="designPara"> {{selectedProject.description}} </p>
     </div>
 </div>

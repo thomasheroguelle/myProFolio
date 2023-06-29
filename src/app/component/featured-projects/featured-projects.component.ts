@@ -9,6 +9,6 @@ import { IProjects, PROJECTS } from 'src/mock/mock';
 })
 export class FeaturedProjectsComponent {
 
-  works : IProjects[] = PROJECTS;
+  presentationCard : IProjects[] = PROJECTS;
 
 }

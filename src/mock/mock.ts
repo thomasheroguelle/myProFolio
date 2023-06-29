@@ -4,9 +4,9 @@ export interface IProjects {
   description: string,
   imagesArray: string[],
   card: boolean,
-  hasText: boolean,
   text?: string,
-  imagesForEshopBase?: string[]
+  imagesForEshopBase?: string[],
+  projectPresentation: string
 }
 
 export interface IServiceCards {
@@ -16,7 +16,7 @@ export interface IServiceCards {
   image: string,
 }
 export interface IImgSvg {
-  title : string,
+  title: string,
   svgImg: string[]
 }
 
@@ -33,21 +33,21 @@ export const PROJECTS: IProjects[] = [
       "assets/todoliste/CREATED_TASK.png",
       "assets/todoliste/HISTORIQUE.png"
     ],
+    projectPresentation: "assets/todoliste/HOME.png",
     card: false,
-    hasText: false
   },
 
   {
     id: 2,
     title: "Travel Note Book",
     description: "The travel application I developed with Angular offers an immersive and aesthetically pleasing experience thanks to its clean design. It gives users easy access to beautiful images of different countries, while offering detailed information on the pros and cons of each destination. What's more, the application is fully responsive and offers practical features such as saving favorite destinations, travel tips and experience sharing. Thanks to the Angular technology stack, the application guarantees a fluid user experience, with optimal data management and smooth screen transitions.",
-    imagesArray: [
+    imagesArray: [ // projects page 
       "assets/travelnotebook/HOME.png",
       "assets/travelnotebook/ALBANIE.png",
 
     ],
+    projectPresentation: "assets/travelnotebook/HOME.png", // home 
     card: false,
-    hasText: false
   },
   {
     id: 3,
@@ -55,10 +55,14 @@ export const PROJECTS: IProjects[] = [
     description: "The eShop B.A.S.E project is an e-commerce platform developed with Angular, featuring a clean design for a pleasant user experience. With its six main pages, including the home page, item list, item detail page, categories, shopping cart and checkout page, the site enables users to navigate easily and complete their purchases with ease. Thanks to the Angular technology stack, the project guarantees a responsive and fluid experience, offering an intuitive interface and optimal functionality for an optimized online shopping experience.",
     imagesArray: [
       "assets/base/HOMEPAGE.png",
+      "assets/base/CATEGORIES.png",
+      "assets/base/ARTICLES.png",
+      "assets/base/ARTICLE.png",
+      "assets/base/COMMANDE.png",
+      "assets/base/FORMULAIRE.png",
     ],
     card: true,
     text: "Click to see more",
-    hasText: true,
     imagesForEshopBase: [
       "assets/base/HOMEPAGE.png",
       "assets/base/CATEGORIES.png",
@@ -66,8 +70,8 @@ export const PROJECTS: IProjects[] = [
       "assets/base/ARTICLE.png",
       "assets/base/COMMANDE.png",
       "assets/base/FORMULAIRE.png",
-    ]
-
+    ],
+    projectPresentation: "assets/base/HOMEPAGE.png",
   }
 ];
 export const SERVICECARDS: IServiceCards[] = [
@@ -101,7 +105,7 @@ export const SERVICECARDS: IServiceCards[] = [
 ]
 export const IMGSVG: IImgSvg[] = [
   {
-    title : "BDD",
+    title: "BDD",
     svgImg: [
       "assets/svg/spring.svg",
       "assets/svg/mysql-horizontal.svg",
@@ -109,7 +113,7 @@ export const IMGSVG: IImgSvg[] = [
     ]
   },
   {
-    title : "Front",
+    title: "Front",
     svgImg: [
       "assets/svg/angular.svg",
       "assets/svg/react.svg",
