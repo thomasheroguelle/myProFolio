@@ -1,38 +1,17 @@
 h3.featured-title {
     margin-top: 50px;
-    text-align: center;
     font-size: clamp(14px, 5vw, 50px);
-}
-
-h4 {
-    padding: 20px;
     text-align: center;
-    font-size: clamp(14px, 5vw, 40px);
 }
 
-img {
-    width: 100%;
-    max-width: 450px;
-    object-fit: cover;
-}
 
 .displayFlex {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-}
-
-.work-container {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    margin-top: 25px;
-    padding: 25px;
-
+    gap: 86px;
 }
+
 
 .orange-btn {
     display: flex;
@@ -52,14 +31,11 @@ button {
     font-size: clamp(12px, 5vw, 22px);
     margin-top: 55px;
 }
+
 .btn {
-    display: flex  ;
+    display: flex;
     justify-content: center;
 }
 
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 @media screen and (max-width: 800px) {}

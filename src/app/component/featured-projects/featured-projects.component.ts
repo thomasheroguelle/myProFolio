@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IProjects, PROJECTS } from 'src/mock/mock';
 
 
@@ -9,6 +9,8 @@ import { IProjects, PROJECTS } from 'src/mock/mock';
 })
 export class FeaturedProjectsComponent {
 
-  presentationCard : IProjects[] = PROJECTS;
+  // presentationCard : IProjects[] = PROJECTS;
+
+  presentationCard: IProjects[] = PROJECTS;
 
 }

@@ -6,7 +6,8 @@ export interface IProjects {
   card: boolean,
   text?: string,
   imagesForEshopBase?: string[],
-  projectPresentation: string
+  projectPresentation: string,
+  legend: string[]
 }
 
 export interface IServiceCards {
@@ -35,6 +36,13 @@ export const PROJECTS: IProjects[] = [
     ],
     projectPresentation: "assets/todoliste/HOME.png",
     card: false,
+    legend: [
+      "HOME PAGE",
+      "Create a Task",
+      "Get Tasks",
+      "Historic Page "
+
+    ]
   },
 
   {
@@ -42,12 +50,18 @@ export const PROJECTS: IProjects[] = [
     title: "Travel Note Book",
     description: "The travel application I developed with Angular offers an immersive and aesthetically pleasing experience thanks to its clean design. It gives users easy access to beautiful images of different countries, while offering detailed information on the pros and cons of each destination. What's more, the application is fully responsive and offers practical features such as saving favorite destinations, travel tips and experience sharing. Thanks to the Angular technology stack, the application guarantees a fluid user experience, with optimal data management and smooth screen transitions.",
     imagesArray: [ // projects page 
-      "assets/travelnotebook/HOME.png",
-      "assets/travelnotebook/ALBANIE.png",
-
+      "assets/travelnotebook/1.png",
+      "assets/travelnotebook/2.png",
+      "assets/travelnotebook/3.png"
     ],
-    projectPresentation: "assets/travelnotebook/HOME.png", // home 
+    projectPresentation: "assets/travelnotebook/2.png", // home 
     card: false,
+    legend: [
+      "HOME PAGE",
+      "Albanie Page 1/2",
+      "Albanie Page 2/2"
+
+    ]
   },
   {
     id: 3,
@@ -72,34 +86,42 @@ export const PROJECTS: IProjects[] = [
       "assets/base/FORMULAIRE.png",
     ],
     projectPresentation: "assets/base/HOMEPAGE.png",
+    legend: [
+      "HOME PAGE",
+      "Catégories",
+      "Articles",
+      "Selected article",
+      "Commande",
+      "Form",
+    ]
   }
 ];
 export const SERVICECARDS: IServiceCards[] = [
   {
     id: 1,
     title: "Back-End",
-    description: "I specialize in developing robust back-end applications using Java and Spring. I create APIs, manage databases, and implement scalable architecture to deliver high-performance, secure, and scalable solutions.",
+    description: "I specialize in developing back-end applications using Java and Spring. I create APIs, manage databases, and implement scalable architecture to deliver high-performance, secure, and scalable solutions.",
     image: "assets/servicecards/backEnd.png",
 
   },
   {
     id: 2,
     title: "Front-End",
-    description: "I'm passionate about designing modern, responsive websites. With expertise in HTML, CSS, and JavaScript, I create attractive and user-friendly interfaces. Using Angular and TypeScript, I develop advanced and responsive web applications for optimal user experience across devices and browsers.",
+    description: "I'm passionate about designing modern, responsive websites. With experience in HTML, CSS and JavaScript, and using Angular and TypeScript, I develop responsive web applications for optimal user experience across devices and browsers.",
     image: "assets/servicecards/htmlcss.png",
 
   },
   {
     id: 3,
     title: "Web Design",
-    description: "I excel in creating visually appealing and intuitive experiences. My focus is on designing unique graphic charters, ensuring color harmony, typography, and ergonomic design. I also create wireframes and mock-ups to plan and visualize website structures prior to development.",
+    description: "I love creating visually appealing and intuitive experiences. My focus is on designing unique graphic charters, ensuring color harmony, typography, and ergonomic design. I also create wireframes and mock-ups to plan and visualize website structures prior to development.",
     image: "assets/servicecards/webDesign.png",
 
   },
   {
     id: 4,
     title: "Wordpress",
-    description: "With extensive knowledge of WordPress, I leverage plugins to extend functionality according to project requirements. I optimize websites for search engines, ensuring maximum visibility. Whether it's a blog, showcase site, or e-commerce platform, I provide flexible and high-performance solutions using WordPress.",
+    description: "With my knowledge of WordPress, I leverage plugins to extend functionality according to project requirements. I optimize websites for search engines, ensuring maximum visibility. I provide flexible and high-performance solutions using WordPress.",
     image: "assets/servicecards/wordpress.png"
   },
 ]

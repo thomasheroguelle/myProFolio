@@ -1,14 +1,35 @@
+<!-- <div id="featured-projects">
+
+    <h3 class="featured-title">Featured Projects</h3>
+
+    <div *ngFor="let t of presentationCard"  class="work-container column">
+        <h4> {{t.title}}</h4>
+        <div class="image-container displayFlex">
+            <img [src]="t.projectPresentation" alt="">
+        </div>
+    </div>
+</div>
+<div class="btn">
+    <button class="orange-btn" routerLink="/projects">Click to see more</button>
+</div> -->
 <div id="featured-projects">
     <h3 class="featured-title">Featured Projects</h3>
-    <div class="displayFlex" *ngFor="let t of presentationCard">
-        <div style="margin-bottom: 25;" class="work-container">
-            <h4> {{t.title}}</h4>
-            <div class="image-container">
-                <img [src]="t.projectPresentation" alt="">
-            </div>
-        </div>
+
+    <div class="displayFlex">
+        <ng-container *ngFor="let project of presentationCard">
+            <app-project-card [card]="project"></app-project-card>
+        </ng-container>
     </div>
     <div class="btn">
         <button class="orange-btn" routerLink="/projects">Click to see more</button>
     </div>
 </div>
+
+<!-- Dans cet exemple, <ng-container> est utilisé avec *ngFor pour itérer sur chaque projet de presentationCard 
+    et générer dynamiquement des instances du composant app-project-card en utilisant la syntaxe [card]="project".
+     Cela permet de passer chaque objet de projet en tant que valeur d'entrée (card) au composant app-project-card.
+
+    L'intérêt d'utiliser [card]="project" est de fournir des données spécifiques à chaque instance du composant
+     app-project-card. En utilisant la propriété d'entrée card du composant app-project-card, vous pouvez lier les données 
+     du projet à afficher dans le composant. Ainsi, chaque instance du composant app-project-card peut afficher les informations
+      spécifiques à un projet particulier, comme le titre, la description et l'image. -->

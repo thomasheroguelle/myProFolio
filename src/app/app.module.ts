@@ -14,6 +14,7 @@ import { BurgerMenuComponent } from './component/burger-menu/burger-menu.compone
 import { ErrorpageComponent } from './component/errorpage/errorpage.component';
 import { EshopComponent } from './component/eshop/eshop.component';
 import { FilteredProjectsComponent } from './component/filtered-projects/filtered-projects.component';
+import { ProjectCardComponent } from './component/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FilteredProjectsComponent } from './component/filtered-projects/filtere
     BurgerMenuComponent,
     ErrorpageComponent,
     EshopComponent,
-    FilteredProjectsComponent
+    FilteredProjectsComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

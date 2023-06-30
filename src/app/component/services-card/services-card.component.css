@@ -1,31 +1,5 @@
-.imgSvg {
-    width: 50%;
-    max-width: 150px;
-    margin: 15px;
-
-}
-
-.displayFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.bg-black {
-    background-image: linear-gradient(to right top, #0a0a0a, #080808, #070606, #050504, #030302, #0f0e0e, #171616, #1d1d1d, #2e2e2e, #404040, #525252, #666666);
-}
-
-.cards-container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    padding-bottom: 25px;
-}
-
 h3 {
-    color: white;
+    color: black;
     text-align: center;
     font-size: clamp(14px, 5vw, 50px);
 
@@ -37,12 +11,43 @@ h4 {
     font-size: clamp(14px, 5vw, 20px);
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.imgSvg {
+    width: 50%;
+    max-width: 150px;
+    margin: 15px;
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.bg-black {
+    background-color: #0A0A0A;
+}
+
+
+.cards-container {
+    padding-bottom: 25px;
+}
+
+
 .card {
     width: 20em;
     border-radius: 40px;
-    background-color: white;
+    border: 2px solid red;
+    border-radius: 10px;
     margin: 67px;
     padding: 30px;
+    height: 480px;
 }
 
 .card:hover {
@@ -50,10 +55,6 @@ h4 {
     color: orangered;
 }
 
-img {
-    width: 100%;
-    object-fit: cover;
-}
 
 
 

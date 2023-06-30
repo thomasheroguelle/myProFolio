@@ -1,30 +1,28 @@
 <div id="stacks-used">
-    <div class="bg-black">
-        <h3 style="padding-top: 50px;">What can I do for you</h3>
-        <div class="cards-container">
-            <div class="card" *ngFor="let card of serviceCards">
-                <img [src]="card.image" class="card-img-top">
+    <h3 style="padding-top: 50px;">What can I do for you</h3>
+    <div class="cards-container displayFlex">
+        <div class="card" *ngFor="let card of serviceCards">
+            <img [src]="card.image" class="card-img-top">
 
-                <div class="card-body">
-                    <h4 class="card-title"> {{card.title}}</h4>
-                    <p class="card-text">{{card.description}}</p>
-                    <div>
-                    </div>
+            <div class="card-body">
+                <h4 class="card-title"> {{card.title}}</h4>
+                <p class="card-text">{{card.description}}</p>
+                <div>
                 </div>
-
-
-
-
             </div>
-
         </div>
-        <h3>Stacks used : </h3>
-        <div class="displayFlex" *ngFor="let card of imgSvg">
-            <ng-container *ngFor="let svg of card.svgImg">
-            
-                    <img class="imgSvg" [src]="svg" alt="">
-            </ng-container>
-        </div>
-
 
     </div>
+    <div class="bg-black">
+
+        <h3 style="color: #fff;">Stacks used : </h3>
+        <div class="displayFlex" *ngFor="let card of imgSvg">
+            <ng-container *ngFor="let svg of card.svgImg">
+
+                <img class="imgSvg" [src]="svg" alt="">
+            </ng-container>
+        </div>
+    </div>
+
+
+</div>
