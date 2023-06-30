@@ -1,9 +1,25 @@
-.bg-black {
-    background-color: #0A0A0A;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-    border-bottom-left-radius: 45px;
-    border-bottom-right-radius: 45px;
+#stacks-used {
+    height: 150vh;
+}
+h3 {
+    color: black;
+    text-align: center;
+    font-size: clamp(14px, 5vw, 50px);
+
+}
+
+h4 {
+    padding: 20px;
+    text-align: center;
+    font-size: clamp(14px, 5vw, 20px);
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
