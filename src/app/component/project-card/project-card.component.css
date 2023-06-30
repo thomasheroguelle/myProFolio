@@ -6,8 +6,9 @@ h4 {
 }
 img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 15px;
+    max-height: 470px;
 }
 .displayFlex {
     display: flex;

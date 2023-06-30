@@ -13,16 +13,8 @@
         </div>
 
     </div>
-    <div class="bg-black">
-
-        <h3 style="color: #fff;">Stacks used : </h3>
-        <div class="displayFlex" *ngFor="let card of imgSvg">
-            <ng-container *ngFor="let svg of card.svgImg">
-
-                <img class="imgSvg" [src]="svg" alt="">
-            </ng-container>
-        </div>
-    </div>
+    <app-stacks-used></app-stacks-used>
+ 
 
 
 </div>

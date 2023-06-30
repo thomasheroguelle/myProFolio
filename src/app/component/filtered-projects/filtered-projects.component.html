@@ -1,5 +1,7 @@
 <div class="container">
 
+    <app-back-btn></app-back-btn>
+
     <form class="myForm" [formGroup]="myForm">
         <select name="filterProject" formControlName="filterProject" (change)="filterProjects()">
             <option value="">All Projects</option>

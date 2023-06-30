@@ -1,78 +1,91 @@
 h2 {
-    font-size: clamp(16px, 5vw, 90px);
+  font-size: clamp(16px, 5vw, 90px);
+  color: white;
+  max-width: 800px;
+}
+
+p {
+  font-size: clamp(12px, 5vw, 25px);
+  color: white;
+  max-width: 800px;
+
+
+}
+
+.pres-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+}
+
+/* BUTTONS */
+.btn-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.orange-btn {
+  background-color: #FF8132;
+  border: none;
+  color: white;
+}
+
+.white-btn {
+  background-color: white;
+  border: 3px solid #FF8132;
+  color: #FF8132;
+}
+
+button {
+  padding: 12px;
+  border-radius: 25px;
+  margin: 25px;
+  cursor: pointer;
+  font-size: clamp(12px, 5vw, 22px);
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+  button {
+    margin-top: 0;
   }
-  
-  p {
-    font-size: clamp(12px, 5vw, 25px);
-  }
-  
+
   .pres-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+    height: auto;
+    width: auto;
   }
-  
-  /* BUTTONS */
+}
+
+@media screen and (max-width: 710px) {
   .orange-btn {
-    background-color: #FF8132;
-    border: none;
-    color: white;
+    background-color: #f3b54a;
   }
-  
-  .white-btn {
-    background-color: white;
-    border-color: #FF8132;
+
+  button {
+    margin-top: 15px;
+  }
+
+  .name {
+    color: #584848;
+    font-weight: bold;
+  }
+
+  .work {
+    color: #6e7889;
+    font-weight: bold;
+  }
+
+  .projects {
     color: #FF8132;
   }
-  
-  button {
-    padding: 12px;
-    border-radius: 25px;
-    margin: 25px;
-    cursor: pointer;
-    font-size: clamp(12px, 5vw, 22px);
-  }
-  
-  button:hover {
-    opacity: 80%;
-  }
-  
-  /* RESPONSIVE */
-  @media screen and (max-width: 800px) {
-    button {
-      margin-top: 0;
-    }
-  
-    .pres-container {
-      height: auto;
-      width: auto;
-    }
-  }
-  
-  @media screen and (max-width: 710px) {
-    .orange-btn {
-      background-color: #f3b54a;
-    }
-  
-    button {
-      margin-top: 15px;
-    }
-  
-    .name {
-      color: #584848;
-      font-weight: bold;
-    }
-  
-    .work {
-      color: #6e7889;
-      font-weight: bold;
-    }
-  
-    .projects {
-      color: #FF8132;
-    }
-  }
-  
+}

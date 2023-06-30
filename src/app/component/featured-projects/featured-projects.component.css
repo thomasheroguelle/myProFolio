@@ -23,6 +23,11 @@ h3.featured-title {
     color: white;
 }
 
+.orange-btn:hover {
+    opacity: 90%;
+}
+
+
 button {
     padding: 12px;
     border-radius: 25px;

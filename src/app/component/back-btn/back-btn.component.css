@@ -1,0 +1,16 @@
+button {
+    background-color: #0A0A0A;
+    border-radius: 50px;
+    color: white;
+    padding: 30px;
+    border: none;
+    width: 5%;
+    position: fixed;
+    top: 15;
+    left: 0;
+    margin-left: 80px;
+}
+
+i {
+    width: 25px;
+}

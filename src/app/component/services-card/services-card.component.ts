@@ -8,7 +8,6 @@ import { IImgSvg, IMGSVG, IServiceCards, SERVICECARDS } from 'src/mock/mock';
 })
 export class ServicesCardComponent   {
   serviceCards : IServiceCards[] = SERVICECARDS;
-  imgSvg : IImgSvg[] = IMGSVG;
 
 
 }

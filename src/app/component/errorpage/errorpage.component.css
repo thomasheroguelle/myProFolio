@@ -1,12 +1,7 @@
-button {
-    background-color: #0A0A0A;
-    border-radius: 60px;
-    width: 17%;
-    margin-top: 45px;
-    padding: 11px;
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
+
+
+h3 {
+    font-size: clamp(25px, 5vw, 50px);
 }
 .bouton {
     margin-top: 25px;

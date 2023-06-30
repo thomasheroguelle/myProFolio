@@ -1,3 +1,6 @@
+#stacks-used {
+    height: 150vh;
+}
 h3 {
     color: black;
     text-align: center;
@@ -14,14 +17,12 @@ h4 {
 img {
     width: 100%;
     object-fit: cover;
+    z-index: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
-.imgSvg {
-    width: 50%;
-    max-width: 150px;
-    margin: 15px;
-}
 
 .displayFlex {
     display: flex;
@@ -30,9 +31,7 @@ img {
     flex-wrap: wrap;
     text-align: center;
 }
-.bg-black {
-    background-color: #0A0A0A;
-}
+
 
 
 .cards-container {
@@ -41,13 +40,12 @@ img {
 
 
 .card {
-    width: 20em;
-    border-radius: 40px;
-    border: 2px solid red;
+    width: 17em;
     border-radius: 10px;
-    margin: 67px;
-    padding: 30px;
-    height: 480px;
+    margin: 15px;
+    height: 445px;
+    border: 3px solid #FF8132;
+
 }
 
 .card:hover {
