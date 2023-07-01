@@ -6,14 +6,14 @@
     overflow: hidden;
 }
 
-.cursorPointer {
+.myName {
     color: white;
-    font-size: clamp(14px, 5vw, 30px);
+    font-size: clamp(18px, 5vw, 30px);
     cursor: pointer;
     text-align: center;
 }
 
-.cursorPointer:hover {
+.myName:hover {
     color: #FF8132;
 }
 

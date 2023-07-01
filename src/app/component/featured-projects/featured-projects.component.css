@@ -1,6 +1,6 @@
 h3.featured-title {
     margin-top: 50px;
-    font-size: clamp(14px, 5vw, 50px);
+    font-size: clamp(28px, 5vw, 50px);
     text-align: center;
 }
 
@@ -9,6 +9,7 @@ h3.featured-title {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 86px;
 }
 

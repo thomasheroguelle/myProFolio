@@ -1,7 +1,7 @@
 
 h4 {
     padding: 20px;
-    font-size: clamp(14px, 5vw, 30px);
+    font-size: clamp(20px, 5vw, 30px);
     text-align: center;
 }
 img {
