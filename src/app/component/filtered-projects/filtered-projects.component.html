@@ -1,21 +1,27 @@
 <div class="container">
-
     <app-back-btn></app-back-btn>
 
     <form class="myForm" [formGroup]="myForm">
         <select name="filterProject" formControlName="filterProject" (change)="filterProjects()">
-            <option value="">All Projects</option>
+            <option value="">Select one project</option>
             <option *ngFor="let p of projects" [value]="p.title">
                 {{p.title}}
             </option>
         </select>
     </form>
 
-    <div class="displayFlex" *ngIf="selectedProject">
-            <img *ngFor="let image of selectedProject.imagesArray" [src]="image"
+    <ng-container>
+        <div class="displayFlex" *ngIf="selectedProject">
+            <img style="border : 2px solid" *ngFor="let image of selectedProject.imagesArray" [src]="image"
                 [class.todoliste]="selectedProject.title === 'TODO LISTE'"
-                [class.tnb]="selectedProject.title === 'Travel Note Book'" alt=""
-                [class.eshop]="selectedProject.title === 'E-SHOP B.A.S.E.'" alt="">
-        <p class="designPara"> {{selectedProject.description}} </p>
-    </div>
+                [class.tnb]="selectedProject.title === 'Travel Note Book'"
+                [class.eshop]="selectedProject.title === 'E-SHOP B.A.S.E.'" alt="" />
+            <div class="column">
+                <p class="designPara">{{selectedProject.description}}</p>
+                <a *ngIf="selectedProject.card === true"  href="http://simplon-base.netlify.app/">
+                    Check this project here
+                </a>
+            </div>
+        </div>
+    </ng-container>
 </div>

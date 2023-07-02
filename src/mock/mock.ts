@@ -50,9 +50,8 @@ export const PROJECTS: IProjects[] = [
     title: "Travel Note Book",
     description: "The travel application I developed with Angular offers an immersive and aesthetically pleasing experience thanks to its clean design. It gives users easy access to beautiful images of different countries, while offering detailed information on the pros and cons of each destination. What's more, the application is fully responsive and offers practical features such as saving favorite destinations, travel tips and experience sharing. Thanks to the Angular technology stack, the application guarantees a fluid user experience, with optimal data management and smooth screen transitions.",
     imagesArray: [ // projects page 
-      "assets/travelnotebook/1.png",
-      "assets/travelnotebook/2.png",
-      "assets/travelnotebook/3.png"
+    "assets/travelnotebook/2.png",
+      "assets/travelnotebook/1.png"
     ],
     projectPresentation: "assets/travelnotebook/2.png", // home 
     card: false,
