@@ -14,15 +14,13 @@ p {
 
 .max-widthH2 {
   max-width: 80vw;
-
 }
 
 .margin-top {
-  margin-top: 25px;
+  margin-top: 72px;
 }
 
 .pres-container {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,13 +63,6 @@ button:hover {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 800px) {
-
-  .pres-container {
-    height: auto;
-  }
-}
-
 @media screen and (max-width: 710px) {
   .pres-container {
     background: #131e25;
@@ -85,8 +76,9 @@ button:hover {
 
 }
 
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 780px) and (min-width: 400px) {
   .pres-container {
-    height: 100vh;
+    background: radial-gradient(circle at 51% 116%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 28.9%, rgb(255, 163, 77) 23.9%, rgb(255, 163, 77) 38.4%, rgb(19, 30, 37) 33.5%, rgb(19, 30, 37) 60%)
   }
+
 }
