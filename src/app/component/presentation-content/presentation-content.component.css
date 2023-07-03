@@ -94,7 +94,7 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 780px) and (min-width: 400px) {
+@media only screen and (max-width: 780px) and (min-width: 300px) {
   .pres-container {
     background: radial-gradient(circle at 51% 116%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 28.9%, rgb(255, 163, 77) 23.9%, rgb(255, 163, 77) 38.4%, rgb(19, 30, 37) 33.5%, rgb(19, 30, 37) 60%)
   }
