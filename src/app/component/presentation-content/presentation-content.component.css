@@ -17,7 +17,12 @@ p {
 }
 
 .margin-top {
-  margin-top: 72px;
+  margin-top: 25px;
+}
+
+.color {
+  color: #ff7c00;
+  font-weight: bold;
 }
 
 .pres-container {
@@ -67,18 +72,36 @@ button:hover {
   .pres-container {
     background: #131e25;
   }
+
+  .btn-flex {
+    margin-top: 17px;
+  }
+
+  button {
+    margin: 3px;
+  }
 }
 
 @media screen and (max-width: 950px) {
   .max-widthParagraphe {
-    max-width: 90%;
+    max-width: 60%;
   }
+}
 
+@media screen and (max-width: 950px) {
+  .max-widthParagraphe {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 780px) and (min-width: 400px) {
   .pres-container {
     background: radial-gradient(circle at 51% 116%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 28.9%, rgb(255, 163, 77) 23.9%, rgb(255, 163, 77) 38.4%, rgb(19, 30, 37) 33.5%, rgb(19, 30, 37) 60%)
   }
+}
 
+@media screen and (min-width: 1821px) {
+  .max-widthH2 {
+    max-width: 70%;
+  }
 }

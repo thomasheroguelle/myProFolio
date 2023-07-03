@@ -53,7 +53,7 @@ export const PROJECTS: IProjects[] = [
     "assets/travelnotebook/2.png",
       "assets/travelnotebook/1.png"
     ],
-    projectPresentation: "assets/travelnotebook/2.png", // home 
+    projectPresentation: "assets/travelnotebook/tnb pres.png", // home 
     card: false,
     legend: [
       "HOME PAGE",
